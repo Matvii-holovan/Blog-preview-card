@@ -1,0 +1,150 @@
+:root {
+  --color-gray-950: #111;
+  --color-white: #fff;
+  --color-yellow: #f4d04e;
+  --color-gray-500: #6b6b6b;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Figtree", Barlow, sans-serif;
+  /* min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: var(--color-yellow); */
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: var(--color-yellow);
+}
+
+.card {
+  border: 1px solid #111;
+  border-radius: 20px;
+  padding: 24px;
+  width: 384px;
+  height: 522px;
+  box-shadow: 8px 8px 0 0 #000;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container {
+}
+.card-image {
+  border-radius: 10px;
+  fill: #f4d04e;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-title {
+  border-radius: 4px;
+  padding: 4px 12px;
+  width: 82px;
+  background: #f4d04e;
+  font-family: "Figtree", sans-serif;
+}
+.card-date {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+  line-height: 150%;
+  color: #111;
+}
+.card-heading {
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+
+  line-height: 150%;
+  color: #111;
+}
+
+.card-heading:hover,
+.card-heading:hover {
+  color: #f4d04e;
+  cursor: pointer;
+}
+
+.card-description {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 150%;
+  color: #6b6b6b;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-author-img {
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+.card-author-name {
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-gray-950);
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 320px;
+    height: auto;
+  }
+
+  .card-img {
+    width: "280";
+    height: "200";
+  }
+  .card-date {
+    font-size: 12px;
+  }
+  .card-title {
+    border-radius: 4px;
+    padding: 4px 12px;
+    width: 73px;
+    height: 26px;
+  }
+  .card-heading {
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+
+    /* line-height: 30px; */
+    line-height: 150%;
+    color: #111;
+  }
+  .card-description {
+    font-size: 14px;
+  }
+}
